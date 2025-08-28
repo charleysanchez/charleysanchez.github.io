@@ -38,3 +38,31 @@
 .card .links a {
   text-decoration: none;
 }
+
+/* Featured projects */
+.featured-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  display: grid;
+  gap: 2rem;
+}
+
+.featured-card {
+  display: flex;
+  flex-direction: row;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.featured-card img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.featured-card .card-content {
+  padding: 1rem 1.5rem;
+}
+
