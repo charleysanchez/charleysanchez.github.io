@@ -8,11 +8,5 @@
 - title: sEMG Keystroke Recognition
   description: BiLSTM with residual connections for sEMG typing; 12% relative CER improvement on EMG2QWERTY; domain transfer to handle channel/rate shifts.
   tech: [PyTorch, LSTM, Signal Processing]
-  image: /assets/img/semg.jpg
+  # image: /assets/img/semg.jpg
   repo: https://github.com/charleysanchez/SOTA-4
-
-- title: Jetson Nano PyTorch Guide (CUDA 12.6 / JetPack 6.2)
-  description: End-to-end setup notes for PyTorch + torchvision + ONNX Runtime on Jetson, with troubleshooting and verified wheels.
-  tech: [PyTorch, CUDA, Jetson, ONNX Runtime, Linux]
-  image: /assets/img/jetson.jpg
-  repo: https://github.com/charleysanchez/jetson-pytorch-notes
