@@ -66,3 +66,18 @@ Hi, I’m Charley. I build machine learning systems with a focus on reliable, re
   {% endunless %}
 {% endfor %}
 </ul>
+
+
+---
+
+## Skills & Tools
+
+<div class="skills">
+  <h3>Core ML</h3>
+  <p>PyTorch · TensorFlow · Diffusion Models · Transformers</p>
+  <h3>Deployment</h3>
+  <p>Docker · ONNX Runtime · Flask · Jetson · TorchServe</p>
+  <h3>Infrastructure</h3>
+  <p>CUDA · HPC clusters · GitHub Actions · Weights & Biases · SQL</p>
+</div>
+
