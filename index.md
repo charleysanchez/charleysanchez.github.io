@@ -1,4 +1,4 @@
-**---
+---
 title: Home
 ---
 
@@ -11,8 +11,6 @@ Hi, I’m Charley. I build machine learning systems with a focus on reliable, re
 **Quick links:**  
 - [About](/about/)  
 - [Resume](/assets/docs/Charley_Sanchez_Resume.pdf){:target="_blank"}  
-- [Blog](/blog/) (coming soon)  
-- [Contact](#contact)  
 
 ---
 
@@ -52,4 +50,10 @@ Hi, I’m Charley. I build machine learning systems with a focus on reliable, re
   <h3>Infrastructure</h3>
   <p>CUDA · HPC clusters · GitHub Actions · Weights & Biases · SQL</p>
 </div>
+
+---
+
+## Get in Touch {#contact}
+
+I'm always excited to collaborate on impactful ML projects or discuss new ideas. Feel free to reach out via <a href="mailto:charleysanchez@gmail.com">email</a> or connect on <a href="https://github.com/charleysanchez" target="_blank">GitHub</a> or <a href="https://www.linkedin.com/in/charley-sanchez-034745297/" target="_blank">LinkedIn</a>.
 
