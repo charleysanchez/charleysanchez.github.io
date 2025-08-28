@@ -1,4 +1,4 @@
-- title: PAVAC: Privacy-Aware Vehicular Autonomous Computation
+- title: "PAVAC: Privacy-Aware Vehicular Autonomous Computation"
   description: Real-time face anonymization on NVIDIA Jetson using SCRFD + ONNX Runtime/TensorRT. ~24 FPS, ~41 ms end-to-end at 640×480; evaluated vs SAM with Dice/Recall and environment aggregates.
   tech: [PyTorch, ONNX Runtime, TensorRT, InsightFace, OpenCV, Jetson]
   image: /assets/img/pavac.png
