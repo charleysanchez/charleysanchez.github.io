@@ -1,0 +1,18 @@
+- title: PAVAC — Privacy-Aware Vehicular Anonymization
+  description: Real-time face anonymization on NVIDIA Jetson using SCRFD + ONNX Runtime/TensorRT. ~24 FPS, ~41 ms end-to-end at 640×480; evaluated vs SAM with Dice/Recall and environment aggregates.
+  tech: [PyTorch, ONNX Runtime, TensorRT, InsightFace, OpenCV, Jetson]
+  image: /assets/img/pavac.jpg
+  repo: https://github.com/charleysanchez/AVPrivacy-Jetson
+  paper: /assets/docs/MEng_Capstone_Report___Autonomous_Privacy.pdf
+
+- title: sEMG Keystroke Recognition
+  description: BiLSTM with residual connections for sEMG typing; 12% relative CER improvement on EMG2QWERTY; domain transfer to handle channel/rate shifts.
+  tech: [PyTorch, LSTM, Signal Processing]
+  image: /assets/img/semg.jpg
+  repo: https://github.com/charleysanchez/SOTA-4
+
+- title: Jetson Nano PyTorch Guide (CUDA 12.6 / JetPack 6.2)
+  description: End-to-end setup notes for PyTorch + torchvision + ONNX Runtime on Jetson, with troubleshooting and verified wheels.
+  tech: [PyTorch, CUDA, Jetson, ONNX Runtime, Linux]
+  image: /assets/img/jetson.jpg
+  repo: https://github.com/charleysanchez/jetson-pytorch-notes
