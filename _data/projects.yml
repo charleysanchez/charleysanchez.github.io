@@ -8,5 +8,7 @@
 - title: sEMG Keystroke Recognition
   description: BiLSTM with residual connections for sEMG typing; 12% relative CER improvement on EMG2QWERTY; domain transfer to handle channel/rate shifts.
   tech: [PyTorch, LSTM, Signal Processing]
-  # image: /assets/img/semg.jpg
+  image: /assets/img/semg.png
   repo: https://github.com/charleysanchez/SOTA-4
+  paper: /assets/docs/SEmg_report.pdf
+
