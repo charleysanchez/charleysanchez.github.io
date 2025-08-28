@@ -1,9 +1,9 @@
 - title: PAVAC — Privacy-Aware Vehicular Anonymization
   description: Real-time face anonymization on NVIDIA Jetson using SCRFD + ONNX Runtime/TensorRT. ~24 FPS, ~41 ms end-to-end at 640×480; evaluated vs SAM with Dice/Recall and environment aggregates.
   tech: [PyTorch, ONNX Runtime, TensorRT, InsightFace, OpenCV, Jetson]
-  image: /assets/img/pavac.jpg
+  image: /assets/img/pavac.png
   repo: https://github.com/charleysanchez/AVPrivacy-Jetson
-  paper: /assets/docs/MEng_Capstone_Report___Autonomous_Privacy.pdf
+  paper: /assets/docs/AVPrivacy_report.pdf
 
 - title: sEMG Keystroke Recognition
   description: BiLSTM with residual connections for sEMG typing; 12% relative CER improvement on EMG2QWERTY; domain transfer to handle channel/rate shifts.
