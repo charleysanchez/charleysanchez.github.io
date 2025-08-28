@@ -16,10 +16,10 @@
 }
 
 .card img {
-  display: block;
   width: 100%;
-  height: 160px;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
+  display: block;
 }
 
 .card h3 {
