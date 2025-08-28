@@ -1,0 +1,40 @@
+.grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 0 0 0.8rem 0;
+  box-shadow: 0 6px 20px rgba(0,0,0,.08);
+  overflow: hidden;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: .8rem 1rem .3rem 1rem;
+}
+
+.card p {
+  margin: .4rem 1rem;
+}
+
+.card .meta {
+  font-size: .9rem;
+  color: #6b7280;
+}
+
+.card .links a {
+  text-decoration: none;
+}
