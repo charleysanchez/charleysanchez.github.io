@@ -6,7 +6,7 @@ title: Home
 
 # {{ site.title }}
 
-Hi, I’m Charley. I build machine learning systems with a focus on reliable, real-time deployment and measurable impact.
+Hi, I’m Charley. I build machine learning systems with a focus on reliable, real-time deployment and measurable impact. Here is my website.
 
 **Quick links:**  
 - [About](/about/)  
