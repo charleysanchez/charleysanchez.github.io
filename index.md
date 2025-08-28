@@ -10,7 +10,7 @@ Hi, I’m Charley. I build machine learning systems with a focus on reliable, re
 
 **Quick links:**  
 - [About](/about/)  
-- [Resume](/assets/docs/Charley_Sanchez_resume.pdf){:target="_blank"}
+- [Resume](/assets/docs/Charley_Sanchez_Resume.pdf){:target="_blank"}
 
 ---
 
