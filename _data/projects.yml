@@ -14,15 +14,15 @@
   paper: /assets/docs/SEmg_report.pdf
 
 - title: "Pretrained Encoders Spurious Learning Analysis"
-  description: "Analyzed the reliance of pretrained language models (BERT, RoBERTa) on spurious features and evaluated counterfactual data augmentation and sequence limits for improved robustness [oai_citation:1‡github.com](https://github.com/metehanberker1/pretrained-encoders-spurious-learning-analysis#:~:text=This%20repository%20contains%20the%20code,augmentation%20can%20mitigate%20these%20effects)."
+  description: "Analyzed the reliance of pretrained language models (BERT, RoBERTa) on spurious features and evaluated counterfactual data augmentation and sequence limits for improved robustness."
   tech: [Python, BERT, RoBERTa, Counterfactual Data Augmentation]
   repo: https://github.com/metehanberker1/pretrained-encoders-spurious-learning-analysis
   paper: /assets/docs/spurious_report.pdf
-  # image: /assets/img/spurious_learning.png   # (add an appropriate image here if desired)
+  image: /assets/img/spurious.jpeg
 
 - title: "Brain Tumor Segmentation (BraTS 2020)"
-  description: "Used deep learning on the BraTS 2020 MRI dataset to segment tumor core and enhancing regions across T1, T1Gd, T2 and FLAIR modalities [oai_citation:4‡raw.githubusercontent.com](https://raw.githubusercontent.com/charleysanchez/brain_tumor_segmentation/refs/heads/main/README.md#:~:text=,planning%20for%20brain%20cancer%20patients) [oai_citation:5‡raw.githubusercontent.com](https://raw.githubusercontent.com/charleysanchez/brain_tumor_segmentation/refs/heads/main/README.md#:~:text=%23%23%23%20Data%20Modalities%3A%20,detection%20of%20lesions%20and%20tumors)."
+  description: "Used deep learning on the BraTS 2020 MRI dataset to segment tumor core and enhancing regions across T1, T1Gd, T2 and FLAIR modalities."
   tech: [Python, Deep Learning, Medical Imaging, BraTS]
   repo: https://github.com/charleysanchez/brain_tumor_segmentation
   # paper:  # Add report link if you have a write‑up or results
-  # image: /assets/img/brain_tumor_seg.png   # (add an appropriate image here if desired)
+  image: /assets/img/brain_seg.jpeg
