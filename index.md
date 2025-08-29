@@ -43,16 +43,23 @@ title: Home
 
 
 ---
-
 ## Skills & Tools
 
 <div class="skills">
   <h3>Core ML</h3>
-  <p>PyTorch · TensorFlow · Diffusion Models · Transformers</p>
+  <p>PyTorch · TensorFlow · Keras · GANs · VAEs · Diffusion Models · Transformers · CNNs · BiLSTM · Segmentation · Object Detection · Spurious Correlation Analysis (BERT, RoBERTa)</p>
+
   <h3>Deployment</h3>
-  <p>Docker · ONNX Runtime · Flask · Jetson · TorchServe</p>
+  <p>Docker · ONNX Runtime · TensorRT · TorchServe · Flask · REST APIs · NVIDIA Jetson (Orin Nano, JetPack)</p>
+
   <h3>Infrastructure</h3>
-  <p>CUDA · HPC clusters · GitHub Actions · Weights & Biases · SQL</p>
+  <p>CUDA · Multi-GPU HPC Clusters · GitHub Actions · Weights & Biases · SQL (PostgreSQL) · Data Pipelines</p>
+
+  <h3>Data & Imaging</h3>
+  <p>Medical Imaging (BraTS, ChestXray14) · Privacy-Aware Video Anonymization (RGB-D) · OpenCV · NumPy · Pandas · Scikit-learn</p>
+
+  <h3>Software Engineering</h3>
+  <p>Python · C · C++ · Bash · LaTeX · Multithreaded Systems (gfserver/gfclient) · Networking · Distributed Systems</p>
 </div>
 
 ---
