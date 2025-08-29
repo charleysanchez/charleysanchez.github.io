@@ -77,4 +77,33 @@
   margin: 0 0 1rem 0;
 }
 
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.hero-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.hero-text h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.hero-links a {
+  text-decoration: none;
+  margin-right: .5rem;
+}
+
+@media (max-width: 640px) {
+  .hero { flex-direction: column; align-items: flex-start; }
+  .hero-pic { width: 120px; height: 120px; }
+}
 
