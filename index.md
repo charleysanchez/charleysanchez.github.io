@@ -5,7 +5,7 @@ title: Home
 <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 
 <div class="hero">
-  <img class="hero-pic" src="/assets/img/charley.jpg" alt="Charley Sanchez portrait">
+  <img class="hero-pic" src="/assets/img/charley.jpeg" alt="Charley Sanchez portrait">
   <div class="hero-text">
     <h1>{{ site.title }}</h1>
     <p>Hi, I’m Charley. I build machine learning systems with a focus on reliable, real-time deployment and measurable impact. Welcome to my portfolio.</p>
