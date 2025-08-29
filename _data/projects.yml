@@ -18,11 +18,11 @@
   tech: [Python, BERT, RoBERTa, Counterfactual Data Augmentation]
   repo: https://github.com/metehanberker1/pretrained-encoders-spurious-learning-analysis
   paper: /assets/docs/spurious_report.pdf
-  image: /assets/img/spurious.jpeg
+  image: /assets/img/spurious.jpg
 
 - title: "Brain Tumor Segmentation (BraTS 2020)"
   description: "Used deep learning on the BraTS 2020 MRI dataset to segment tumor core and enhancing regions across T1, T1Gd, T2 and FLAIR modalities."
   tech: [Python, Deep Learning, Medical Imaging, BraTS]
   repo: https://github.com/charleysanchez/brain_tumor_segmentation
   # paper:  # Add report link if you have a write‑up or results
-  image: /assets/img/brain_seg.jpeg
+  image: /assets/img/brain_seg.jpg
