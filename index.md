@@ -14,6 +14,19 @@ title: Home
       <a href="/assets/docs/Charley_Sanchez_Resume.pdf" target="_blank">Resume</a>
     </p>
   </div>
+
+  <button id="theme-toggle" style="
+  margin-left:auto;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #e2e8f0;
+  color: #111;
+">
+  🌙 Dark
+</button>
+
 </div>
 
 ---
@@ -67,4 +80,28 @@ title: Home
 ## Get in Touch {#contact}
 
 I'm always excited to collaborate on impactful ML projects or discuss new ideas. Feel free to reach out via <a href="mailto:charleysanchez@gmail.com">email</a> or connect on <a href="https://github.com/charleysanchez" target="_blank">GitHub</a> or <a href="https://www.linkedin.com/in/charley-sanchez-034745297/" target="_blank">LinkedIn</a>.
+
+<script>
+  const btn = document.getElementById("theme-toggle");
+  const root = document.documentElement;
+
+  // load stored preference
+  if (localStorage.theme === "dark") {
+    root.setAttribute("data-theme", "dark");
+    btn.textContent = "☀️ Light";
+  }
+
+  btn.addEventListener("click", () => {
+    if (root.getAttribute("data-theme") === "dark") {
+      root.removeAttribute("data-theme");
+      localStorage.theme = "light";
+      btn.textContent = "🌙 Dark";
+    } else {
+      root.setAttribute("data-theme", "dark");
+      localStorage.theme = "dark";
+      btn.textContent = "☀️ Light";
+    }
+  });
+</script>
+
 
