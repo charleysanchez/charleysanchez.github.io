@@ -4,7 +4,7 @@
   tech: [PyTorch, ONNX Runtime, TensorRT, InsightFace, OpenCV, Jetson]
   image: /assets/img/pavac.png
   repo: https://github.com/charleysanchez/AVPrivacy-Jetson
-  demo: /assets/video/PAVAC_example.mp4
+  demo: /assets/video/PAVAC_example.gif
   paper: /assets/docs/AVPrivacy_report.pdf
 
 - title: "sEMG Keystroke Recognition"
