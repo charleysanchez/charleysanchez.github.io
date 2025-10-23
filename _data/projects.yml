@@ -5,7 +5,7 @@
   image: /assets/img/audit_rag.png
   repo: https://github.com/charleysanchez/aws-claude-rag
   demo: /demos/audit-rag/
-  video: https://your-demo-video-link
+  video: https://www.youtube.com/watch?v=ZOJNV82NxgE
 
 - title: "PAVAC: Privacy‑Aware Vehicular Autonomous Computation"
   description: "Real‑time face anonymization on NVIDIA Jetson using SCRFD + ONNX Runtime/TensorRT. ~24 FPS with micro/macro evaluation."
