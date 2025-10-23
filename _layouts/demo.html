@@ -33,6 +33,7 @@
           loading="lazy">
         </iframe>
       </div>
+      {& endif %}
       {% if page.webm %}<source src="{{ page.webm | relative_url }}" type="video/webm">{% endif %}
       <source src="{{ page.mp4 | relative_url }}" type="video/mp4">
       Sorry, your browser doesn't support embedded video.
