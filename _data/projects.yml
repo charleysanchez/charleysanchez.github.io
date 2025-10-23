@@ -1,6 +1,6 @@
 # _data/projects.yml
 - title: "Audit-Aware RAG on AWS Bedrock"
-  description: "Controllable RAG system using Amazon Bedrock (Titan Embeddings + Claude) with strict JSON outputs (finding, evidence, confidence, references), a human-in-the-loop review gate, and JSONL audit logs with trace IDs. Ships with a CLI and a Streamlit UI, plus an offline 'fake' provider mode for demos without AWS."
+  description: "Controllable RAG system using Amazon Bedrock (Titan Embeddings + Claude) with strict JSON outputs (finding, evidence, confidence, references), a human-in-the-loop review gate, and JSONL audit logs with trace IDs. Ships with a CLI and a Streamlit UI."
   tech: ["Python", "AWS Bedrock", "Anthropic Claude", "Amazon Titan Embeddings", "boto3", "LangChain", "Streamlit"]
   image: /assets/img/audit_rag.png
   repo: https://github.com/charleysanchez/aws-claude-rag
