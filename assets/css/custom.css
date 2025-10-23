@@ -135,6 +135,18 @@ body {
   color: var(--link-color);
 }
 
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0; overflow: hidden;
+  border-radius: 12px;
+}
+.video-wrapper iframe {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+}
+.video-poster { display:none; } /* or keep as a fallback image elsewhere */
+
+
 @media (max-width: 640px) {
   .hero { flex-direction: column; align-items: flex-start; }
   .hero-pic { width: 120px; height: 120px; }
