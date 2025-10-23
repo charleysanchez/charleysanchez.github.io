@@ -1,4 +1,12 @@
 # _data/projects.yml
+- title: "Audit-Aware RAG on AWS Bedrock"
+  description: "Controllable RAG system using Amazon Bedrock (Titan Embeddings + Claude) with strict JSON outputs (finding, evidence, confidence, references), a human-in-the-loop review gate, and JSONL audit logs with trace IDs. Ships with a CLI and a Streamlit UI, plus an offline 'fake' provider mode for demos without AWS."
+  tech: ["Python", "AWS Bedrock", "Anthropic Claude", "Amazon Titan Embeddings", "boto3", "LangChain", "Streamlit"]
+  image: /assets/img/audit_rag.png
+  repo: https://github.com/charleysanchez/aws-claude-rag
+  demo: /demos/audit-rag/
+  video: https://your-demo-video-link
+
 - title: "PAVAC: Privacy‑Aware Vehicular Autonomous Computation"
   description: "Real‑time face anonymization on NVIDIA Jetson using SCRFD + ONNX Runtime/TensorRT. ~24 FPS with micro/macro evaluation."
   tech: [PyTorch, ONNX Runtime, TensorRT, InsightFace, OpenCV, Jetson]
