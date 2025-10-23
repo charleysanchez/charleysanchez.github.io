@@ -1,5 +1,3 @@
----
----
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,33 +9,45 @@
     body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#0b0b0b; color:#fff; }
     .wrap { max-width: 960px; margin: 0 auto; padding: 24px; }
     h1 { font-size: clamp(20px, 3vw, 32px); margin: 8px 0 16px; }
-    video { width: 100%; height: auto; display:block; border-radius:12px; }
     a.back { color:#9ad; text-decoration:none; }
     a.back:hover { text-decoration:underline; }
+
+    /* Responsive iframe wrapper */
+    .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius:12px; background:#000; }
+    .video-wrapper iframe { position: absolute; top:0; left:0; width:100%; height:100%; border:0; }
+
+    video { width: 100%; height: auto; display:block; border-radius:12px; background:#000; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <p><a class="back" href="{{ '/' | relative_url }}">← Back</a></p>
     <h1>{{ page.title }}</h1>
-    <video controls preload="metadata" {% if page.poster %}poster="{{ page.poster | relative_url }}"{% endif %}>
-      {% if page.youtube_url %}
-      {% assign vid = page.youtube_url | split: 'v=' | last | split: '&' | first %}
+
+    {%- assign yt_id = page.youtube_id -%}
+    {%- if yt_id == nil and page.youtube_url -%}
+      {%- assign yt_id = page.youtube_url | split: 'v=' | last | split: '&' | first -%}
+    {%- endif -%}
+
+    {%- if yt_id -%}
+      <!-- YouTube embed -->
       <div class="video-wrapper">
         <iframe
-          src="https://www.youtube-nocookie.com/embed/{{ vid }}"
+          src="https://www.youtube-nocookie.com/embed/{{ yt_id }}"
           title="{{ page.title | escape }}"
-          frameborder="0"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
           loading="lazy">
         </iframe>
       </div>
-      {& endif %}
-      {% if page.webm %}<source src="{{ page.webm | relative_url }}" type="video/webm">{% endif %}
-      <source src="{{ page.mp4 | relative_url }}" type="video/mp4">
-      Sorry, your browser doesn't support embedded video.
-    </video>
+    {%- else -%}
+      <!-- Self-hosted video -->
+      <video controls preload="metadata" {% if page.poster %}poster="{{ page.poster | relative_url }}"{% endif %}>
+        {% if page.webm %}<source src="{{ page.webm | relative_url }}" type="video/webm">{% endif %}
+        {% if page.mp4 %}<source src="{{ page.mp4 | relative_url }}" type="video/mp4">{% endif %}
+        Sorry, your browser doesn’t support embedded video.
+      </video>
+    {%- endif -%}
   </div>
 </body>
 </html>
