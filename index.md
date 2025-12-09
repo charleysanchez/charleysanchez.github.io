@@ -11,7 +11,7 @@ title: Home
     <p>Hi, I’m Charley. I build machine learning systems with a focus on reliable, real-time deployment and measurable impact. Welcome to my portfolio.</p>
     <p class="hero-links">
       <a href="/about/">About</a> · 
-      <a href="/assets/docs/Charley_Sanchez_Resume.pdf" target="_blank">Resume</a>
+      <a href="/assets/docs/Charley_Sanchez_CV.pdf" target="_blank">CV</a>
     </p>
   </div>
 
