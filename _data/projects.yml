@@ -1,37 +1,51 @@
 # _data/projects.yml
 - title: "Audit-Aware RAG on AWS Bedrock"
-  description: "Controllable RAG system using Amazon Bedrock (Titan Embeddings + Claude) with strict JSON outputs (finding, evidence, confidence, references), a human-in-the-loop review gate, and JSONL audit logs with trace IDs. Ships with a CLI and a Streamlit UI."
-  tech: ["Python", "AWS Bedrock", "Anthropic Claude", "Amazon Titan Embeddings", "boto3", "LangChain", "Streamlit"]
+  description: "Controllable RAG system using Amazon Bedrock (Titan Embeddings + Claude) with strict JSON outputs, human-in-the-loop review gate, and JSONL audit logs with trace IDs."
+  type: "Production"
+  tech: ["Python", "AWS Bedrock", "Claude", "LangChain", "Streamlit"]
   image: /assets/img/audit_rag.png
   repo: https://github.com/charleysanchez/aws-claude-rag
   demo: /demos/audit-rag/
   video: https://www.youtube.com/watch?v=ZOJNV82NxgE
 
-- title: "PAVAC: Privacy‑Aware Vehicular Autonomous Computation"
-  description: "Real‑time face anonymization on NVIDIA Jetson using SCRFD + ONNX Runtime/TensorRT. ~24 FPS with micro/macro evaluation."
-  tech: [PyTorch, ONNX Runtime, TensorRT, InsightFace, OpenCV, Jetson]
+- title: "PAVAC: Privacy‑Aware Vehicular Computation"
+  description: "Real‑time face anonymization on NVIDIA Jetson using SCRFD + TensorRT. Deployed system with micro/macro evaluation framework against SAM baseline."
+  type: "Research"
+  metric: "24 FPS"
+  venue: "Under review at ICRA 2025"
+  tech: [PyTorch, ONNX, TensorRT, OpenCV, Jetson]
   image: /assets/img/pavac.png
   repo: https://github.com/charleysanchez/AVPrivacy-Jetson
   demo: /demos/pavac/
   paper: /assets/docs/AVPrivacy_report.pdf
 
+- title: "GeoBot: Geolocation Training Pipeline"
+  description: "Complete training pipeline for vision-based geolocation with Haversine loss, YAML configs, WandB tracking, and Gradio inference demo."
+  type: "Research"
+  tech: [PyTorch, WandB, Gradio, YAML]
+  image: /assets/img/geobot.png
+  repo: https://github.com/charleysanchez/geobot-training
+
 - title: "sEMG Keystroke Recognition"
-  description: "BiLSTM with residual connections for sEMG typing; 12% relative CER improvement on EMG2QWERTY; domain-specific processing."
+  description: "BiLSTM with residual connections for sEMG typing on EMG2QWERTY dataset. Domain-specific signal processing pipeline."
+  type: "Research"
+  metric: "12% CER↓"
   tech: [PyTorch, LSTM, Signal Processing]
   image: /assets/img/semg.png
   repo: https://github.com/charleysanchez/SOTA-4
   paper: /assets/docs/SEmg_report.pdf
 
-- title: "Pretrained Encoders Spurious Learning Analysis"
-  description: "Analyzed the reliance of pretrained language models (BERT, RoBERTa) on spurious features and evaluated counterfactual data augmentation and sequence limits for improved robustness."
-  tech: [Python, BERT, RoBERTa, Counterfactual Data Augmentation]
+- title: "Pretrained Encoders Spurious Analysis"
+  description: "Analyzed reliance of BERT/RoBERTa on spurious features. Evaluated counterfactual augmentation and sequence limits for robustness."
+  type: "Research"
+  tech: [Python, BERT, RoBERTa, NLP]
   repo: https://github.com/metehanberker1/pretrained-encoders-spurious-learning-analysis
   paper: /assets/docs/spurious_report.pdf
   image: /assets/img/spurious.jpg
 
 - title: "Brain Tumor Segmentation (BraTS 2020)"
-  description: "Used deep learning on the BraTS 2020 MRI dataset to segment tumor core and enhancing regions across T1, T1Gd, T2 and FLAIR modalities."
-  tech: [Python, Deep Learning, Medical Imaging, BraTS]
+  description: "Deep learning segmentation of tumor core and enhancing regions across T1, T1Gd, T2 and FLAIR MRI modalities."
+  type: "Research"
+  tech: [Python, Deep Learning, Medical Imaging]
   repo: https://github.com/charleysanchez/brain_tumor_segmentation
-  # paper:  # Add report link if you have a write‑up or results
   image: /assets/img/brain_seg.jpg
