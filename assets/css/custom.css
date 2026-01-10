@@ -39,6 +39,9 @@
   /* Transitions */
   --transition-fast: 0.2s ease;
   --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Firefox fallback backgrounds (no transparency) */
+  --card-bg-solid: #ffffff;
 }
 
 [data-theme="dark"] {
@@ -57,6 +60,9 @@
   --card-border: rgba(129, 140, 248, 0.15);
   --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(129, 140, 248, 0.1);
   --card-shadow-hover: 0 20px 40px rgba(129, 140, 248, 0.2), 0 0 0 1px rgba(129, 140, 248, 0.2);
+
+  /* Firefox fallback */
+  --card-bg-solid: #1a1a2e;
 }
 
 /* ============================================
@@ -162,6 +168,9 @@ hr {
 .hero-text h1 {
   font-size: 2.5rem;
   margin: 0 0 0.25rem 0;
+  /* Fallback for Firefox */
+  color: var(--accent-primary);
+  /* Gradient text for supporting browsers */
   background: var(--accent-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -192,14 +201,22 @@ hr {
   align-items: center;
   gap: 0.4rem;
   padding: 0.5rem 1rem;
-  background: var(--card-bg);
+  background: var(--card-bg-solid);
   border: 1px solid var(--card-border);
   border-radius: 8px;
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--text-primary);
-  backdrop-filter: blur(10px);
   transition: all var(--transition-smooth);
+}
+
+/* Glassmorphism for supporting browsers */
+@supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
+  .hero-links a {
+    background: var(--card-bg);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
 }
 
 .hero-links a:hover {
@@ -220,12 +237,12 @@ hr {
   border-radius: 30px;
   border: 1px solid var(--card-border);
   cursor: pointer;
-  background: var(--card-bg);
+  background: var(--card-bg-solid);
+  border: 1px solid var(--card-border);
   color: var(--text-primary);
   font-family: var(--font-sans);
   font-size: 0.85rem;
   font-weight: 500;
-  backdrop-filter: blur(10px);
   transition: all var(--transition-smooth);
   box-shadow: var(--card-shadow);
 }
@@ -259,12 +276,11 @@ hr {
 }
 
 .card {
-  background: var(--card-bg);
+  background: var(--card-bg-solid);
   border: 1px solid var(--card-border);
   border-radius: 16px;
   overflow: hidden;
   box-shadow: var(--card-shadow);
-  backdrop-filter: blur(10px);
   transition: all var(--transition-smooth);
   position: relative;
 }
@@ -422,11 +438,10 @@ hr {
 }
 
 .skill-category {
-  background: var(--card-bg);
+  background: var(--card-bg-solid);
   border: 1px solid var(--card-border);
   border-radius: 12px;
   padding: 1.5rem;
-  backdrop-filter: blur(10px);
   transition: all var(--transition-smooth);
 }
 
@@ -491,11 +506,10 @@ hr {
    RESEARCH INTERESTS
    ============================================ */
 .research-interests {
-  background: var(--card-bg);
+  background: var(--card-bg-solid);
   border: 1px solid var(--card-border);
   border-radius: 16px;
   padding: 2rem;
-  backdrop-filter: blur(10px);
   position: relative;
   overflow: hidden;
 }
@@ -530,12 +544,11 @@ hr {
 }
 
 .publication-item {
-  background: var(--card-bg);
+  background: var(--card-bg-solid);
   border: 1px solid var(--card-border);
   border-radius: 12px;
   padding: 1.25rem 1.5rem;
   margin-bottom: 1rem;
-  backdrop-filter: blur(10px);
   transition: all var(--transition-smooth);
 }
 
@@ -571,11 +584,10 @@ hr {
    EDUCATION SECTION
    ============================================ */
 .education-card {
-  background: var(--card-bg);
+  background: var(--card-bg-solid);
   border: 1px solid var(--card-border);
   border-radius: 12px;
   padding: 1.5rem;
-  backdrop-filter: blur(10px);
   margin-bottom: 1rem;
 }
 
@@ -604,11 +616,10 @@ hr {
    EXPERIENCE SECTION
    ============================================ */
 .experience-card {
-  background: var(--card-bg);
+  background: var(--card-bg-solid);
   border: 1px solid var(--card-border);
   border-radius: 12px;
   padding: 1.5rem;
-  backdrop-filter: blur(10px);
   margin-bottom: 1rem;
   position: relative;
   padding-left: 2rem;
@@ -654,12 +665,11 @@ hr {
    CONTACT SECTION
    ============================================ */
 .contact-section {
-  background: var(--card-bg);
+  background: var(--card-bg-solid);
   border: 1px solid var(--card-border);
   border-radius: 16px;
   padding: 2rem;
   text-align: center;
-  backdrop-filter: blur(10px);
 }
 
 .contact-section p {
@@ -807,5 +817,27 @@ hr {
   .project-type {
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+}
+
+/* ============================================
+   GLASSMORPHISM FOR SUPPORTING BROWSERS
+   Firefox doesn't support backdrop-filter well,
+   so we use solid backgrounds as default and
+   only apply glassmorphism for Chrome/Safari/Edge
+   ============================================ */
+@supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
+
+  .card,
+  .skill-category,
+  .research-interests,
+  .publication-item,
+  .education-card,
+  .experience-card,
+  .contact-section,
+  #theme-toggle {
+    background: var(--card-bg);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
   }
 }
