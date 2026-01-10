@@ -9,48 +9,51 @@ permalink: /about/
 
 ## About Me
 
-I'm a machine learning engineer and researcher currently working as a **research volunteer in Prof. Wenbo Wu's lab at Johns Hopkins University**. I focus on making models *useful*: clean training/evaluation pipelines, fast and reliable serving, and clear metrics that connect to real-world impact.
+I'm a machine learning researcher focused on building systems that strengthen the information pathways clinicians depend on. Currently a **research volunteer in Prof. Wenbo Wu's lab at Johns Hopkins**, working on causal inference for healthcare and privacy-preserving clinical NLP.
 
-I hold an **M.Eng. from UCLA** (specializing in AI) and a **B.S. in Physics from UCSB**. My work spans the full ML stack—from model development and experimentation to edge deployment and production systems. I'm particularly interested in problems at the intersection of **efficient inference**, **medical imaging**, and **robust NLP**.
+I hold an **M.Eng. from UCLA** (AI specialization) and a **B.S. in Physics from UCSB**. My path to ML wasn't linear — I explored several majors before settling on physics, then worked in a diagnostic lab where I saw firsthand how automation and data integrity shape clinical decisions. That experience is what pushed me toward research that improves patient care.
 
 ---
 
-## What I Do
+## Research Focus
 
 <div class="experience-card">
-  <h4>Real-Time ML Systems</h4>
+  <h4>Causal Inference for Healthcare</h4>
   <ul>
-    <li>Built a real-time face anonymization system on NVIDIA Jetson (SCRFD + TensorRT) achieving ~24 FPS at 640×480</li>
-    <li>Created evaluation harness against SAM with Dice/Recall metrics and environment/face-count aggregates</li>
-    <li>Developed controllable RAG systems with audit logging and human-in-the-loop review</li>
+    <li>Using Double-Debiased Machine Learning to estimate treatment effects from observational health data</li>
+    <li>Building evaluation frameworks for deep learning architectures as nuisance models</li>
   </ul>
 </div>
 
 <div class="experience-card">
-  <h4>Production Data Engineering</h4>
+  <h4>Privacy-Preserving Clinical NLP</h4>
   <ul>
-    <li>Shipped data systems at Econ One Research (PostgreSQL platform, multithreaded processing)</li>
-    <li>Implemented accurate billing integrations with comprehensive testing</li>
-    <li>Built data pipelines for large-scale economic litigation analysis</li>
+    <li>Designing federated learning systems for LLMs to extract Social Determinants of Health from decentralized clinical notes</li>
+    <li>Ensuring HIPAA compliance while enabling learning from sensitive patient data</li>
+  </ul>
+</div>
+
+<div class="experience-card">
+  <h4>Embedded Vision Systems</h4>
+  <ul>
+    <li>Real-time privacy-aware perception on edge devices (Jetson Orin Nano)</li>
+    <li>Co-developed Argus for delivery robot privacy (ICRA 2026 submission)</li>
   </ul>
 </div>
 
 ---
 
-## Research Interests
+## Background
 
-I'm excited about research that bridges the gap between ML capabilities and practical deployment:
+My background across physics, clinical work, and ML research gives me a practical perspective for creating impactful tools. In the diagnostic lab, I verified orders and turnaround times for patient samples in Epic — computing stopped feeling abstract when I saw how small design choices could affect patient care.
 
-- **Efficient Inference**: Quantization, pruning, and runtime optimization for edge devices
-- **Medical Imaging**: Robust segmentation and privacy-preserving analysis
-- **Robust NLP**: Understanding and mitigating spurious correlations in language models
-- **Privacy-Aware ML**: On-device processing and anonymization techniques
+At UCLA, I worked with Prof. Nader Sehatbakhsh on embedded ML with privacy protections, learning that computing systems are shaped by strict demands for data protection and real-time deployment.
 
 ---
 
 ## Let's Connect
 
-I'm actively exploring PhD opportunities and industry roles where I can push the boundaries of practical ML systems.
+I'm actively exploring PhD opportunities where I can work alongside clinicians and researchers to build systems that genuinely improve how care is delivered.
 
 <div class="contact-links" style="margin-top: 1.5rem;">
   <a href="mailto:charleysanchez7@gmail.com">📧 Email</a>

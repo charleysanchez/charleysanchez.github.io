@@ -10,8 +10,8 @@ title: Home
   <img class="hero-pic" src="/assets/img/charley.jpeg" alt="Charley Sanchez portrait">
   <div class="hero-text">
     <h1>{{ site.title }}</h1>
-    <p class="hero-tagline">ML Engineer & Researcher @ JHU</p>
-    <p class="hero-bio">I build machine learning systems with a focus on reliable, real-time deployment and measurable impact. Currently a research volunteer in Prof. Wenbo Wu's lab at Johns Hopkins University.</p>
+    <p class="hero-tagline">ML Researcher — Healthcare & Privacy</p>
+    <p class="hero-bio">Building ML systems at the intersection of healthcare and computation. Currently a research volunteer in Prof. Wenbo Wu's lab at Johns Hopkins, working on causal inference and privacy-preserving clinical NLP.</p>
     <p class="hero-links">
       <a href="/about/">📄 About</a>
       <a href="/assets/docs/Charley_Sanchez_CV.pdf" target="_blank">📋 CV</a>
@@ -28,11 +28,12 @@ title: Home
 
 <div class="research-interests">
   <p>
-    I'm interested in building ML systems that work reliably in the real world. My research focuses on 
-    <strong>efficient model deployment</strong> (edge inference, quantization, TensorRT), 
-    <strong>medical imaging</strong> (segmentation, privacy-preserving analysis), and 
-    <strong>robust NLP</strong> (understanding and mitigating spurious correlations in language models). 
-    I'm particularly drawn to problems where careful engineering and principled approaches can unlock practical impact.
+    My research sits at the intersection of <strong>machine learning and healthcare</strong>. I want to build systems that are developed alongside clinicians, evaluated in real clinical settings, and refined until they genuinely improve how care is delivered. Current focus areas include:
+  </p>
+  <p>
+    <strong>Causal Inference for Healthcare</strong> — Using Double-Debiased Machine Learning to estimate treatment effects while correcting for bias in observational health data.<br>
+    <strong>Privacy-Preserving Clinical NLP</strong> — Applying federated learning to train LLMs on decentralized clinical notes for Social Determinants of Health extraction.<br>
+    <strong>Embedded Vision Systems</strong> — Deploying real-time, privacy-aware perception on edge devices with strict latency and memory constraints.
   </p>
 </div>
 
@@ -82,7 +83,7 @@ title: Home
 <ul class="publications-list">
   <li class="publication-item">
     <div class="publication-title">PAVAC: Privacy-Aware Vehicular Autonomous Computation</div>
-    <div class="publication-venue">Under review at ICRA 2025</div>
+    <div class="publication-venue">Under review at ICRA 2026</div>
     <div class="publication-links">
       <a href="/assets/docs/AVPrivacy_report.pdf" target="_blank">📄 PDF</a>
       <a href="https://github.com/charleysanchez/AVPrivacy-Jetson" target="_blank">💻 Code</a>
@@ -90,7 +91,7 @@ title: Home
   </li>
   <li class="publication-item">
     <div class="publication-title">sEMG Keystroke Recognition with Residual BiLSTM Networks</div>
-    <div class="publication-venue">Technical Report, 2024</div>
+    <div class="publication-venue">Technical Report, 2025</div>
     <div class="publication-links">
       <a href="/assets/docs/SEmg_report.pdf" target="_blank">📄 PDF</a>
       <a href="https://github.com/charleysanchez/SOTA-4" target="_blank">💻 Code</a>
@@ -113,14 +114,14 @@ title: Home
 <div class="education-card">
   <h4>M.Eng. in Electrical & Computer Engineering</h4>
   <div class="institution">University of California, Los Angeles (UCLA)</div>
-  <div class="year">2024</div>
+  <div class="year">2025</div>
   <div class="details">Specialization in Artificial Intelligence</div>
 </div>
 
 <div class="education-card">
   <h4>B.S. in Physics</h4>
   <div class="institution">University of California, Santa Barbara (UCSB)</div>
-  <div class="year">2022</div>
+  <div class="year">2023</div>
 </div>
 
 ---
@@ -128,22 +129,42 @@ title: Home
 ## Experience
 
 <div class="experience-card">
-  <h4>Research Volunteer</h4>
+  <h4>Research Volunteer — Causal Inference & Clinical NLP</h4>
   <div class="company">Johns Hopkins University — Prof. Wenbo Wu's Lab</div>
-  <div class="period">2024 – Present</div>
+  <div class="period">2025 – Present</div>
   <ul>
-    <li>Conducting research on ML systems and efficient inference</li>
+    <li><strong>Double-Debiased ML:</strong> Built experimental framework studying deep learning architectures as nuisance models in multi-treatment causal inference; found Residual MLP blocks minimize covariate distortion (paper in preparation)</li>
+    <li><strong>Federated Clinical NLP:</strong> Designing privacy-preserving system to extract Social Determinants of Health from decentralized clinical notes using federated LLMs</li>
+  </ul>
+</div>
+
+<div class="experience-card">
+  <h4>Graduate Researcher — Embedded ML & Privacy</h4>
+  <div class="company">UCLA — Prof. Nader Sehatbakhsh's Lab</div>
+  <div class="period">2024 – 2025</div>
+  <ul>
+    <li>Co-developed <strong>Argus</strong>, a real-time privacy-preserving video system for delivery robots (under review at ICRA 2026)</li>
+    <li>Optimized Jetson Orin Nano pipeline for face detection and anonymization with strict latency/memory constraints</li>
   </ul>
 </div>
 
 <div class="experience-card">
   <h4>Data Engineer</h4>
   <div class="company">Econ One Research</div>
-  <div class="period">2022 – 2023</div>
+  <div class="period">2024</div>
   <ul>
-    <li>Built and maintained PostgreSQL data platform for economic litigation analysis</li>
-    <li>Developed multithreaded processing pipelines for large-scale data ingestion</li>
-    <li>Implemented accurate billing integrations with thorough testing</li>
+    <li>Built PostgreSQL data platform for economic litigation analysis</li>
+    <li>Developed multithreaded pipelines for large-scale data ingestion</li>
+  </ul>
+</div>
+
+<div class="experience-card">
+  <h4>Diagnostic Lab Technician</h4>
+  <div class="company">Clinical Laboratory</div>
+  <div class="period">2023</div>
+  <ul>
+    <li>Verified orders and turnaround times for patient samples in Epic EHR</li>
+    <li>Saw firsthand how automation and data integrity shape clinical decisions — catalyst for pursuing healthcare ML</li>
   </ul>
 </div>
 
