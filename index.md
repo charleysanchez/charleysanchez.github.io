@@ -10,8 +10,8 @@ title: Home
   <img class="hero-pic" src="/assets/img/charley.jpeg" alt="Charley Sanchez portrait">
   <div class="hero-text">
     <h1>{{ site.title }}</h1>
-    <p class="hero-tagline">ML Researcher — Healthcare & Privacy</p>
-    <p class="hero-bio">Building ML systems at the intersection of healthcare and computation. Currently a research volunteer in Prof. Wenbo Wu's lab at Johns Hopkins, working on causal inference and privacy-preserving clinical NLP.</p>
+    <p class="hero-tagline">ML Researcher focused on Healthcare</p>
+    <p class="hero-bio">I work on ML systems that help clinicians make better decisions. Currently in Prof. Wenbo Wu's lab at Johns Hopkins, focusing on causal inference and privacy-preserving clinical NLP.</p>
     <p class="hero-links">
       <a href="/about/">📄 About</a>
       <a href="/assets/docs/Charley_Sanchez_CV.pdf" target="_blank">📋 CV</a>
@@ -28,12 +28,12 @@ title: Home
 
 <div class="research-interests">
   <p>
-    My research sits at the intersection of <strong>machine learning and healthcare</strong>. I want to build systems that are developed alongside clinicians, evaluated in real clinical settings, and refined until they genuinely improve how care is delivered. Current focus areas include:
+    I want to build systems that clinicians can actually use: developed with their input, tested in real settings, and refined until they work. My current projects include:
   </p>
   <p>
-    <strong>Causal Inference for Healthcare</strong> — Using Double-Debiased Machine Learning to estimate treatment effects while correcting for bias in observational health data.<br>
-    <strong>Privacy-Preserving Clinical NLP</strong> — Applying federated learning to train LLMs on decentralized clinical notes for Social Determinants of Health extraction.<br>
-    <strong>Embedded Vision Systems</strong> — Deploying real-time, privacy-aware perception on edge devices with strict latency and memory constraints.
+    <strong>Causal Inference for Healthcare</strong>: Estimating treatment effects from observational health data using Double-Debiased ML.<br>
+    <strong>Privacy-Preserving Clinical NLP</strong>: Training LLMs on decentralized clinical notes with federated learning to extract Social Determinants of Health.<br>
+    <strong>Embedded Vision Systems</strong>: Real-time, privacy-aware perception on edge devices like the Jetson Orin Nano.
   </p>
 </div>
 
@@ -129,8 +129,8 @@ title: Home
 ## Experience
 
 <div class="experience-card">
-  <h4>Research Volunteer — Causal Inference & Clinical NLP</h4>
-  <div class="company">Johns Hopkins University — Prof. Wenbo Wu's Lab</div>
+  <h4>Research Volunteer</h4>
+  <div class="company">Johns Hopkins University, Prof. Wenbo Wu's Lab</div>
   <div class="period">2025 – Present</div>
   <ul>
     <li><strong>Double-Debiased ML:</strong> Built experimental framework studying deep learning architectures as nuisance models in multi-treatment causal inference; found Residual MLP blocks minimize covariate distortion (paper in preparation)</li>
@@ -139,8 +139,8 @@ title: Home
 </div>
 
 <div class="experience-card">
-  <h4>Graduate Researcher — Embedded ML & Privacy</h4>
-  <div class="company">UCLA — Prof. Nader Sehatbakhsh's Lab</div>
+  <h4>Graduate Researcher</h4>
+  <div class="company">UCLA, Prof. Nader Sehatbakhsh's Lab</div>
   <div class="period">2024 – 2025</div>
   <ul>
     <li>Co-developed <strong>Argus</strong>, a real-time privacy-preserving video system for delivery robots (under review at ICRA 2026)</li>
@@ -164,7 +164,7 @@ title: Home
   <div class="period">2023</div>
   <ul>
     <li>Verified orders and turnaround times for patient samples in Epic EHR</li>
-    <li>Saw firsthand how automation and data integrity shape clinical decisions — catalyst for pursuing healthcare ML</li>
+    <li>This is where I first saw how software choices affect patient care, which pushed me toward healthcare ML</li>
   </ul>
 </div>
 

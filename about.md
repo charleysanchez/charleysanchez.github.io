@@ -9,35 +9,35 @@ permalink: /about/
 
 ## About Me
 
-I'm a machine learning researcher focused on building systems that strengthen the information pathways clinicians depend on. Currently a **research volunteer in Prof. Wenbo Wu's lab at Johns Hopkins**, working on causal inference for healthcare and privacy-preserving clinical NLP.
+I'm a machine learning researcher working on systems that help clinicians make better decisions. Right now I'm in Prof. Wenbo Wu's lab at Johns Hopkins, focused on causal inference and privacy-preserving NLP for clinical text.
 
-I hold an **M.Eng. from UCLA** (AI specialization) and a **B.S. in Physics from UCSB**. My path to ML wasn't linear — I explored several majors before settling on physics, then worked in a diagnostic lab where I saw firsthand how automation and data integrity shape clinical decisions. That experience is what pushed me toward research that improves patient care.
+I have an M.Eng. from UCLA (AI) and a B.S. in Physics from UCSB. My route to ML was indirect. I tried a few majors, landed on physics, then worked in a diagnostic lab after graduating. That job changed how I think about software: I verified orders and turnaround times in Epic, and I saw how small system bugs could delay patient care. After that, building reliable healthcare tools stopped being an abstract goal.
 
 ---
 
-## Research Focus
+## What I'm Working On
 
 <div class="experience-card">
-  <h4>Causal Inference for Healthcare</h4>
+  <h4>Causal Inference</h4>
   <ul>
-    <li>Using Double-Debiased Machine Learning to estimate treatment effects from observational health data</li>
-    <li>Building evaluation frameworks for deep learning architectures as nuisance models</li>
+    <li>Estimating treatment effects from observational health data with Double-Debiased ML</li>
+    <li>Testing how different neural network architectures perform as nuisance models</li>
   </ul>
 </div>
 
 <div class="experience-card">
-  <h4>Privacy-Preserving Clinical NLP</h4>
+  <h4>Clinical NLP</h4>
   <ul>
-    <li>Designing federated learning systems for LLMs to extract Social Determinants of Health from decentralized clinical notes</li>
-    <li>Ensuring HIPAA compliance while enabling learning from sensitive patient data</li>
+    <li>Designing federated systems so LLMs can learn from clinical notes across hospitals without sharing raw data</li>
+    <li>Extracting Social Determinants of Health while staying HIPAA compliant</li>
   </ul>
 </div>
 
 <div class="experience-card">
-  <h4>Embedded Vision Systems</h4>
+  <h4>Embedded Vision</h4>
   <ul>
-    <li>Real-time privacy-aware perception on edge devices (Jetson Orin Nano)</li>
-    <li>Co-developed Argus for delivery robot privacy (ICRA 2026 submission)</li>
+    <li>Real-time face anonymization on Jetson hardware</li>
+    <li>Co-developed Argus, a privacy system for delivery robots (ICRA 2026 submission)</li>
   </ul>
 </div>
 
@@ -45,15 +45,15 @@ I hold an **M.Eng. from UCLA** (AI specialization) and a **B.S. in Physics from 
 
 ## Background
 
-My background across physics, clinical work, and ML research gives me a practical perspective for creating impactful tools. In the diagnostic lab, I verified orders and turnaround times for patient samples in Epic — computing stopped feeling abstract when I saw how small design choices could affect patient care.
+Before grad school, I worked in a diagnostic lab. I'd verify sample orders and check turnaround times in Epic. It sounds routine, but when something went wrong with the software, patients waited longer. That stuck with me.
 
-At UCLA, I worked with Prof. Nader Sehatbakhsh on embedded ML with privacy protections, learning that computing systems are shaped by strict demands for data protection and real-time deployment.
+At UCLA, I worked with Prof. Nader Sehatbakhsh on embedded ML with privacy constraints. The project taught me that real-world systems have to respect memory limits, latency budgets, and data protection rules all at once.
 
 ---
 
-## Let's Connect
+## What's Next
 
-I'm actively exploring PhD opportunities where I can work alongside clinicians and researchers to build systems that genuinely improve how care is delivered.
+I'm looking for PhD programs where I can work closely with clinicians and build tools that actually get used in practice. If that sounds interesting to you, reach out.
 
 <div class="contact-links" style="margin-top: 1.5rem;">
   <a href="mailto:charleysanchez7@gmail.com">📧 Email</a>
