@@ -841,3 +841,140 @@ hr {
     backdrop-filter: blur(10px);
   }
 }
+
+/* ============================================
+   HIGH SPECIFICITY OVERRIDES FOR CAYMAN THEME
+   These ensure our styles work in all browsers
+   ============================================ */
+.main-content .card,
+.main-content .skill-category,
+.main-content .research-interests,
+.main-content .publication-item,
+.main-content .education-card,
+.main-content .experience-card,
+.main-content .contact-section {
+  background: var(--card-bg-solid) !important;
+  border: 1px solid var(--card-border) !important;
+  border-radius: 12px !important;
+  color: var(--text-primary) !important;
+}
+
+.main-content .card {
+  border-radius: 16px !important;
+  overflow: hidden !important;
+}
+
+.main-content .publications-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.main-content .publications-list li {
+  list-style: none !important;
+  margin: 0 0 1rem 0 !important;
+}
+
+.main-content .grid {
+  list-style: none !important;
+  padding: 0 !important;
+  display: grid !important;
+  gap: 1.5rem !important;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) !important;
+}
+
+.main-content .grid li {
+  list-style: none !important;
+}
+
+.main-content .skill-pills {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.5rem !important;
+}
+
+.main-content .skill-pill {
+  padding: 0.35rem 0.75rem !important;
+  background: var(--bg-tertiary) !important;
+  color: var(--text-secondary) !important;
+  font-size: 0.85rem !important;
+  border-radius: 20px !important;
+  display: inline-block !important;
+}
+
+.main-content .tech-tags {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.4rem !important;
+}
+
+.main-content .tech-tag {
+  padding: 0.25rem 0.6rem !important;
+  background: var(--bg-tertiary) !important;
+  color: var(--text-secondary) !important;
+  font-size: 0.75rem !important;
+  border-radius: 4px !important;
+  display: inline-block !important;
+}
+
+.main-content .project-type {
+  display: inline-block !important;
+  padding: 0.25rem 0.6rem !important;
+  background: var(--accent-glow) !important;
+  color: var(--accent-primary) !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  border-radius: 4px !important;
+}
+
+.main-content .project-venue {
+  display: inline-block !important;
+  padding: 0.3rem 0.7rem !important;
+  background: rgba(245, 158, 11, 0.15) !important;
+  color: #f59e0b !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  border-radius: 4px !important;
+  border: 1px solid rgba(245, 158, 11, 0.2) !important;
+}
+
+.main-content .impact-metric {
+  display: inline-flex !important;
+  padding: 0.2rem 0.5rem !important;
+  background: rgba(16, 185, 129, 0.1) !important;
+  color: #10b981 !important;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  border-radius: 4px !important;
+}
+
+.main-content .hero-links a {
+  display: inline-flex !important;
+  padding: 0.5rem 1rem !important;
+  background: var(--card-bg-solid) !important;
+  border: 1px solid var(--card-border) !important;
+  border-radius: 8px !important;
+  color: var(--text-primary) !important;
+  text-decoration: none !important;
+}
+
+.main-content .contact-links a {
+  display: inline-flex !important;
+  padding: 0.75rem 1.5rem !important;
+  background: var(--bg-tertiary) !important;
+  border-radius: 8px !important;
+  color: var(--text-primary) !important;
+  text-decoration: none !important;
+}
+
+.main-content .publication-links a,
+.main-content .card .links a {
+  display: inline-block !important;
+  padding: 0.4rem 0.9rem !important;
+  background: var(--bg-tertiary) !important;
+  border-radius: 6px !important;
+  color: var(--accent-primary) !important;
+  text-decoration: none !important;
+}
