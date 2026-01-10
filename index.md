@@ -10,7 +10,7 @@ title: Home
   <img class="hero-pic" src="/assets/img/charley.jpeg" alt="Charley Sanchez portrait">
   <div class="hero-text">
     <h1>{{ site.title }}</h1>
-    <p class="hero-tagline">ML Researcher focused on Healthcare</p>
+    <p class="hero-tagline">ML Researcher focused on Healthcare & Privacy</p>
     <p class="hero-bio">I work on ML systems that help clinicians make better decisions. Currently in Prof. Wenbo Wu's lab at Johns Hopkins, focusing on causal inference and privacy-preserving clinical NLP.</p>
     <p class="hero-links">
       <a href="/about/">📄 About</a>
