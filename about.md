@@ -1,82 +1,17 @@
 ---
 title: About
 permalink: /about/
+description: How I got from physics to a clinical lab to a PhD on the security of healthcare AI.
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+<h1 class="page-title">About</h1>
 
-<button id="theme-toggle">🌙 Dark</button>
+My route into machine learning was indirect. I tried a few majors before landing on physics at UC Santa Barbara, and after graduating I took a job as a lab assistant at Pacific Diagnostic Laboratories. I processed specimens, verified orders, and tracked turnaround times in Epic. It sounds routine, but when something went wrong with the software, patients waited longer for results. That stuck with me, and it's the reason I care about healthcare software that actually works.
 
-## About Me
+I went back to school for an M.Eng. at UCLA, focusing on AI. There I joined Prof. Nader Sehatbakhsh's Secure Systems and Architectures Lab and worked on real-time face anonymization for robots running on a Jetson Orin Nano. That project taught me that real systems have to respect memory limits, latency budgets, and privacy requirements all at the same time.
 
-I'm a machine learning researcher working on systems that help clinicians make better decisions. Right now I'm in Prof. Wenbo Wu's lab at Johns Hopkins, focused on causal inference and privacy-preserving NLP for clinical text.
+After UCLA, I volunteered in Prof. Wenbo Wu's lab at Johns Hopkins, working on causal inference. I studied how the design of deep nuisance models changes treatment-effect estimates in double machine learning, which meant running and keeping track of 2,000+ model configurations on a SLURM cluster. In 2026 I also worked in Prof. Anind K. Dey's lab at Georgia Tech on mental health assessment from wearable data, and built a self-hosted LLM system for Econ One Research as a consultant.
 
-I have an M.Eng. from UCLA (AI) and a B.S. in Physics from UCSB. My route to ML was indirect. I tried a few majors, landed on physics, then worked in a diagnostic lab after graduating. That job changed how I think about software: I verified orders and turnaround times in Epic, and I saw how small system bugs could delay patient care. After that, building reliable healthcare tools stopped being an abstract goal.
+In August 2026 I started a PhD in Computer Science at UMBC, where I work with [Prof. Dong Li](https://leetton.github.io/) in the [FSI Lab](https://leetton.github.io/fsi/) on the security of foundation models for physiological signals like EEG, ECG, and wearable data. It pulls together the threads above: privacy, reliability, and models that clinicians and patients can depend on.
 
----
-
-## What I'm Working On
-
-<div class="experience-card">
-  <h4>Causal Inference</h4>
-  <ul>
-    <li>Estimating treatment effects from observational health data with Double-Debiased ML</li>
-    <li>Testing how different neural network architectures perform as nuisance models</li>
-  </ul>
-</div>
-
-<div class="experience-card">
-  <h4>Clinical NLP</h4>
-  <ul>
-    <li>Designing federated systems so LLMs can learn from clinical notes across hospitals without sharing raw data</li>
-    <li>Extracting Social Determinants of Health while staying HIPAA compliant</li>
-  </ul>
-</div>
-
-<div class="experience-card">
-  <h4>Embedded Vision</h4>
-  <ul>
-    <li>Real-time face anonymization on Jetson hardware</li>
-    <li>Co-developed Argus, a privacy system for delivery robots (ICRA 2026 submission)</li>
-  </ul>
-</div>
-
----
-
-## Background
-
-Before grad school, I worked in a diagnostic lab. I'd verify sample orders and check turnaround times in Epic. It sounds routine, but when something went wrong with the software, patients waited longer. That stuck with me.
-
-At UCLA, I worked with Prof. Nader Sehatbakhsh on embedded ML with privacy constraints. The project taught me that real-world systems have to respect memory limits, latency budgets, and data protection rules all at once.
-
----
-
-## What's Next
-
-I'm looking for PhD programs where I can work closely with clinicians and build tools that actually get used in practice. If that sounds interesting to you, reach out.
-
-<div class="contact-links" style="margin-top: 1.5rem;">
-  <a href="mailto:charleysanchez7@gmail.com">📧 Email</a>
-  <a href="https://github.com/charleysanchez" target="_blank">💻 GitHub</a>
-  <a href="https://www.linkedin.com/in/charley-sanchez-034745297/" target="_blank">🔗 LinkedIn</a>
-</div>
-
-<script>
-  const btn = document.getElementById("theme-toggle");
-  const root = document.documentElement;
-  if (localStorage.theme === "dark") {
-    root.setAttribute("data-theme", "dark");
-    btn.textContent = "☀️ Light";
-  }
-  btn.addEventListener("click", () => {
-    if (root.getAttribute("data-theme") === "dark") {
-      root.removeAttribute("data-theme");
-      localStorage.theme = "light";
-      btn.textContent = "🌙 Dark";
-    } else {
-      root.setAttribute("data-theme", "dark");
-      localStorage.theme = "dark";
-      btn.textContent = "☀️ Light";
-    }
-  });
-</script>
+If you want to talk about any of this, email me at [{{ site.author.email }}](mailto:{{ site.author.email }}).

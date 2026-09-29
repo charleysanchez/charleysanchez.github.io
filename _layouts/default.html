@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-name" href="{{ '/' | relative_url }}">Charley Sanchez</a>
+      <nav>
+        <a href="{{ '/#research' | relative_url }}">Research</a>
+        <a href="{{ '/#papers' | relative_url }}">Papers</a>
+        <a href="{{ '/#projects' | relative_url }}">Projects</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ '/assets/docs/Charley_Sanchez_CV.pdf' | relative_url }}">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Charley Sanchez &middot; <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></span>
+      <span>Last updated {{ site.time | date: "%B %Y" }}</span>
+    </div>
+  </footer>
+</body>
+</html>

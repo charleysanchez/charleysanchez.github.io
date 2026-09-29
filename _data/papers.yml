@@ -1,0 +1,26 @@
+# Newest first. "C. Sanchez" is bolded automatically in the author list.
+- title: "Argus: Real-Time Privacy-Preserving Video Streaming for Delivery Robots"
+  authors: H. Khalili, P. Do, A. Dabiran, C. Sanchez, A. Hafemeister, V. Nguyen, K. Apicharttrisorn, N. Sehatbakhsh
+  venue: Manuscript in preparation
+
+- title: "PAVAC: Privacy-Aware Vehicular Autonomous Computation"
+  authors: P. Do, A. Dabiran, V. Nguyen, A. Hafemeister, C. Sanchez
+  venue: Technical report, UCLA, 2025
+  links:
+    pdf: /assets/docs/AVPrivacy_report.pdf
+    code: https://github.com/charleysanchez/AVPrivacy-Jetson
+    video: /demos/pavac/
+
+- title: Bridging the Generalization Gap in sEMG Keystroke Recognition with LSTM-Based Architectures
+  authors: A. Jain, C. Sanchez
+  venue: Technical report, UCLA, 2025
+  links:
+    pdf: /assets/docs/SEmg_report.pdf
+    code: https://github.com/charleysanchez/SOTA-4
+
+- title: Spurious Correlation Detection in Natural Language Processing
+  authors: M. Berker, N. Huey, C. Sanchez
+  venue: Technical report, UCLA, 2024
+  links:
+    pdf: /assets/docs/spurious_report.pdf
+    code: https://github.com/metehanberker1/pretrained-encoders-spurious-learning-analysis

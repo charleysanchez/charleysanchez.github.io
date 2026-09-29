@@ -1,23 +1,28 @@
 title: Charley Sanchez
-description: Machine Learning Scientist Portfolio
+description: PhD student in Computer Science at UMBC, studying the security of foundation models for physiological signals.
 url: https://charleysanchez.github.io
 baseurl: ""
+lang: en
 
-remote_theme: pages-themes/cayman@v0.2.0
 plugins:
-  - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Optional social links for SEO tags:
 author:
   name: Charley Sanchez
-  links:
-    - "https://github.com/charleysanchez"
-    - "mailto:charleysanchez7@gmail.com"
+  email: charleysanchez@umbc.edu
 
-# Add this so custom CSS loads everywhere
+social:
+  name: Charley Sanchez
+  links:
+    - https://github.com/charleysanchez
+    - https://www.linkedin.com/in/charley-sanchez-034745297/
+
+exclude:
+  - README.md
+
 defaults:
   - scope: {path: ""}
     values:
       layout: default
+      image: /assets/img/charley-portrait.jpg

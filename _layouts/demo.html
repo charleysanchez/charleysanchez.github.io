@@ -1,155 +1,37 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
-  <style>
-    body { 
-      margin: 0; 
-      font-family: var(--font-sans, system-ui, -apple-system, sans-serif); 
-      background: var(--bg-primary, #0f0f1a); 
-      color: var(--text-primary, #f1f5f9); 
-    }
-    .wrap { 
-      max-width: 960px; 
-      margin: 0 auto; 
-      padding: 2rem; 
-    }
-    h1 { 
-      font-size: clamp(1.5rem, 4vw, 2.5rem); 
-      margin: 0.5rem 0 1.5rem;
-      background: var(--accent-gradient, linear-gradient(135deg, #6366f1, #8b5cf6));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    a.back { 
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      color: var(--accent-primary, #818cf8); 
-      text-decoration: none;
-      font-weight: 500;
-      padding: 0.5rem 1rem;
-      background: var(--card-bg, rgba(26, 26, 46, 0.8));
-      border: 1px solid var(--card-border, rgba(129, 140, 248, 0.15));
-      border-radius: 8px;
-      transition: all 0.3s ease;
-    }
-    a.back:hover { 
-      background: var(--accent-primary, #818cf8);
-      color: white;
-    }
+---
+layout: default
+---
+<p class="back"><a href="{{ '/#projects' | relative_url }}">&larr; Back to projects</a></p>
 
-    /* Responsive iframe wrapper */
-    .video-wrapper { 
-      position: relative; 
-      padding-bottom: 56.25%; 
-      height: 0; 
-      overflow: hidden; 
-      border-radius: 16px; 
-      background: #000;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-      margin-top: 1.5rem;
-    }
-    .video-wrapper iframe { 
-      position: absolute; 
-      top: 0; 
-      left: 0; 
-      width: 100%; 
-      height: 100%; 
-      border: 0; 
-    }
+<h1 class="page-title">{{ page.title }}</h1>
 
-    video { 
-      width: 100%; 
-      height: auto; 
-      display: block; 
-      border-radius: 16px; 
-      background: #000;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-      margin-top: 1.5rem;
-    }
+{%- assign yt_id = page.youtube_id -%}
+{%- if yt_id == nil and page.youtube_url -%}
+  {%- assign yt_id = page.youtube_url | split: 'v=' | last | split: '&' | first -%}
+{%- endif -%}
 
-    .description {
-      margin-top: 2rem;
-      padding: 1.5rem;
-      background: var(--card-bg, rgba(26, 26, 46, 0.8));
-      border: 1px solid var(--card-border, rgba(129, 140, 248, 0.15));
-      border-radius: 12px;
-      color: var(--text-secondary, #cbd5e1);
-    }
+{%- if yt_id -%}
+<div class="video">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/{{ yt_id }}"
+    title="{{ page.title | escape }}"
+    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+    loading="lazy"></iframe>
+</div>
+{%- else -%}
+<video class="video" controls preload="metadata" {% if page.poster %}poster="{{ page.poster | relative_url }}"{% endif %}>
+  {% if page.webm %}<source src="{{ page.webm | relative_url }}" type="video/webm">{% endif %}
+  {% if page.mp4 %}<source src="{{ page.mp4 | relative_url }}" type="video/mp4">{% endif %}
+  Sorry, your browser doesn't support embedded video.
+</video>
+{%- endif -%}
 
-    .project-links {
-      display: flex;
-      gap: 1rem;
-      margin-top: 1.5rem;
-      flex-wrap: wrap;
-    }
+{{ content }}
 
-    .project-links a {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.75rem 1.25rem;
-      background: var(--accent-primary, #818cf8);
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 500;
-      transition: all 0.3s ease;
-    }
-
-    .project-links a:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(129, 140, 248, 0.3);
-    }
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <a class="back" href="{{ '/' | relative_url }}">← Back to Portfolio</a>
-    <h1>{{ page.title }}</h1>
-
-    {%- assign yt_id = page.youtube_id -%}
-    {%- if yt_id == nil and page.youtube_url -%}
-      {%- assign yt_id = page.youtube_url | split: 'v=' | last | split: '&' | first -%}
-    {%- endif -%}
-
-    {%- if yt_id -%}
-      <!-- YouTube embed -->
-      <div class="video-wrapper">
-        <iframe
-          src="https://www.youtube-nocookie.com/embed/{{ yt_id }}"
-          title="{{ page.title | escape }}"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-          loading="lazy">
-        </iframe>
-      </div>
-    {%- else -%}
-      <!-- Self-hosted video -->
-      <video controls preload="metadata" {% if page.poster %}poster="{{ page.poster | relative_url }}"{% endif %}>
-        {% if page.webm %}<source src="{{ page.webm | relative_url }}" type="video/webm">{% endif %}
-        {% if page.mp4 %}<source src="{{ page.mp4 | relative_url }}" type="video/mp4">{% endif %}
-        Sorry, your browser doesn't support embedded video.
-      </video>
-    {%- endif -%}
-
-    {% if page.description %}
-    <div class="description">
-      {{ page.description | markdownify }}
-    </div>
-    {% endif %}
-
-    {% if page.repo or page.paper %}
-    <div class="project-links">
-      {% if page.repo %}<a href="{{ page.repo }}" target="_blank">💻 View Code</a>{% endif %}
-      {% if page.paper %}<a href="{{ page.paper }}" target="_blank">📄 Read Paper</a>{% endif %}
-    </div>
-    {% endif %}
-  </div>
-</body>
-</html>
+{% if page.repo or page.paper %}
+<p class="links">
+  {% if page.repo %}<a href="{{ page.repo }}">code</a>{% endif %}
+  {% if page.paper %}<a href="{{ page.paper | relative_url }}">report (pdf)</a>{% endif %}
+</p>
+{% endif %}
